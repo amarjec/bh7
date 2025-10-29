@@ -17,7 +17,7 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 await connectDB();
 
-const allowedOrigin = ['http://localhost:5173'];
+const allowedOrigin = ['http://localhost:5173', 'https://billinghabit.netlify.app', 'https://billinghabit.com' ];
 
 app.use(express.json());
 app.use(cookieParser());
