@@ -4,7 +4,7 @@ import express from 'express';
 import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import cron from 'node-cron';
-import connectDB from './configs/MongoDB.js';
+import connectDB from './configs/mongoDB.js';
 import userRouter from './routes/userRoute.js';
 import categoryRouter from './routes/categoryRoute.js';
 import subCategoryRouter from './routes/subCategoryRoute.js';
