@@ -51,13 +51,13 @@ export const sendOtp = async (req, res) => {
 
         // 3. Send OTP via SMS Service
         // console.log(`[OTP SENT] to ${number}: ${otp}`);
-        const mailOptions = {
-            from: process.env.SENDER_EMAIL,
-            to: process.env.ADMIN_MAIL,
-            subject: `${number} is ${otp}`,
-            text: `Welcome to Billing Habit. Your login otp for ${number} is ${otp}`,
-        }
-        await transporter.sendMail(mailOptions);
+        // const mailOptions = {
+        //     from: process.env.SENDER_EMAIL,
+        //     to: process.env.ADMIN_MAIL,
+        //     subject: `${number} is ${otp}`,
+        //     text: `Welcome to Billing Habit. Your login otp for ${number} is ${otp}`,
+        // }
+        // await transporter.sendMail(mailOptions);
 
         res.status(200).json({ 
             success: true, 
